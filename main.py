@@ -22,7 +22,7 @@ model=joblib.load("model.pkl")  #loading the model from the pickle file
 
 @app.get("/")  #get method
 def testing():
-    return {"test":"all ok"}
+    return {"test":"all "}
 
 @app.post("/prediction")
 def myprediction(hours: float):
